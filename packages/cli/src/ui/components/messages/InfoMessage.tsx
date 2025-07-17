@@ -23,8 +23,8 @@ export const InfoMessage: React.FC<InfoMessageProps> = ({ parts }) => {
       <Box width={prefixWidth}>
         <Text color={Colors.AccentYellow}>{prefix}</Text>
       </Box>
-      <Box flexGrow={1} flexWrap="wrap" flexDirection="row">
-        <Text color={Colors.AccentYellow}>
+      <Box flexGrow={1}>
+        <Text wrap="wrap" color={Colors.AccentYellow}>
           {parts.map((part, index) =>
             part.type === 'text' ? (
               <React.Fragment key={index}>{part.text}</React.Fragment>
